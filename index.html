@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+
+
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Nome Completo</label>
+        <input type="text" placeholder="Escreva seu nome" id="contato-nome" onkeyup="validaNome()">
+        <span id="nome-erro"></span>
+      </div>
+
+      <i class="fa-solid fa-circle-check"></i>
+
+      <div class="input-group">
+        <label>Num. Fone</label>
+        <input type="tel" placeholder="123 456 7890" id="contato-fone" onkeyup="validaFone()">
+        <span id="fone-erro"><i class="fa-solid fa-circle-check"></i></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Escreva seu email">
+        <span id="email-erro"> </span>
+      </div>   
+
+      <div class="input-group">
+        <label>Escreva uma mensagem</label>
+        <textarea rows="5" placeholder="Escreva sua mensagem"></textarea>
+        <span id="message-erro"></span>
+      </div>
+
+    <button>Salvar</button>
+    <span id="submit-erro">Favor corrigir erro</span>
+  </form>
+
+  </div>
+  <script src="script.js"></script>   
+</body>
+</html>
